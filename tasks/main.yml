@@ -1,0 +1,4 @@
+- include_tasks: import.yml
+  with_items: "{{ acm_certs }}"
+  loop_control:
+    loop_var: cert_item
