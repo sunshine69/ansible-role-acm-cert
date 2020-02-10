@@ -1,5 +1,5 @@
 - name: Get certificate facts
-  aws_acm_facts:
+  aws_acm_info:
     region: "{{region}}"
     profile: "{{ profile|default(omit) }}"
     domain_name: "{{ cert_item.domain_name }}"
